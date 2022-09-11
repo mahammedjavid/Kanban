@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- modal -->
+    <!-- <button class="btn" data-target="#modal1">Modal 1</button> -->
+    
+    
+    
+    <div class="modal" id="content_form">
+        <div class="header">
+            <div class="title">Add </div>
+            <button class="btn modal-btn">&times;</button>
+        </div>
+        <div class="body">
+            <input type="text" id="input-content">
+            <input type="submit" value="Add" id="submit-content">
+        </div>
+    </div>
+    
+
+    
+
+    <!-- Front Page -->
+    <div class="container">
+        <!-- no status id for adding content in js -->
+        <div class="status" id="no_status">
+            <h1>No Status</h1>
+            <button id="add_btn" data-target="#content_form">+ Add</button>
+            <div class="content" draggable="true"> 
+                Buy a Pizza
+                <span class="close">&times;</span>
+            </div>
+        </div>
+        <div class="status">
+            <h1>Not Started</h1>
+        </div>
+        <div class="status">
+            <h1>In Progress</h1>
+        </div>
+        <div class="status">
+            <h1>Completed</h1>
+        </div>
+    </div>
+
+
+    <!-- modal overlay -->
+    <div id="overlay"></div>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
